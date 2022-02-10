@@ -1,0 +1,6 @@
+
+Next-gen-JS-Feature-Table
+https://kangax.github.io/compat-table/es6/
+
+Primitive-vs-Reference-Values
+https://academind.com/learn/javascript/reference-vs-primitive-values/
