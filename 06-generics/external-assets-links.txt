@@ -1,0 +1,9 @@
+
+JS-Promises
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
+Primitive-vs-Reference-Values
+https://academind.com/learn/javascript/reference-vs-primitive-values/
+
+Utility-Types-Docs
+https://www.typescriptlang.org/docs/handbook/utility-types.html
