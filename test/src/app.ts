@@ -36,36 +36,55 @@
 
 // // accountingCopy.describe();
 
-class Department {
-  // name: string;
-  // id: string;
-  private employees: string[] = [];
+// class Department {
+//   // name: string;
+//   // id: string;
+//   private employees: string[] = [];
 
-  // this constructor is shortcut for double initialization
-  constructor(private name: string, public id: string) {
-    // this.name = n;
-    // this.id = id;
-  }
+//   // this constructor is shortcut for double initialization
+//   constructor(private name: string, public id: string) {
+//     // this.name = n;
+//     // this.id = id;
+//   }
 
-  describe(this: Department) {
-    console.log("Department: " + this.name + this.id);
-  }
+//   describe(this: Department) {
+//     console.log("Department: " + this.name + this.id);
+//   }
 
-  addEmployee(employee: string) {
-    this.employees.push(employee);
-  }
+//   addEmployee(employee: string) {
+//     this.employees.push(employee);
+//   }
 
-  printEmployeeInformation() {
-    console.log(this.employees.length);
-    console.log(this.employees);
+//   printEmployeeInformation() {
+//     console.log(this.employees.length);
+//     console.log(this.employees);
+//   }
+// }
+
+// const accounting = new Department("d1", "Accounting");
+
+// accounting.addEmployee("Max");
+// accounting.addEmployee("Manu");
+// accounting.addEmployee("Dude");
+
+// accounting.describe();
+// accounting.printEmployeeInformation();
+// accounting.printEmployeeInformation();
+
+function Logger(constructor: Function) {
+  console.log("Logging...");
+  console.log(constructor);
+}
+
+@Logger
+class Person {
+  name = "Max";
+
+  constructor() {
+    console.log("Creating person object...");
   }
 }
 
-const accounting = new Department("d1", "Accounting");
+const pers = new Person();
 
-accounting.addEmployee("Max");
-accounting.addEmployee("Manu");
-accounting.addEmployee("Dude");
-
-accounting.describe();
-accounting.printEmployeeInformation();
+console.log(pers);
